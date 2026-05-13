@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedido de Pizza das turmas de informática</title>
+    <link rel="stylesheet" href="style.css">   
+    
+
+    
+ </head>
+ <body> 
+   <div class="container">
+    <form class="pizza-form"
+    
+    
+ </style>
+
+       <h1>🍕Pedido de Pizza das turmas de IA🍕</h1>
+       
+       <fieldset>
+         <legend>1. Quem tá pedindo?</legend>
+         <label for="nome">Seu nome:</label>
+         <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" required>
+                                                                                                                       
+         <label for="turma">Turma:</label>  
+         <input type="text" id="turma" name="turma" list="turmas" placeholder="Digite ou escolha" required>
+         <datalist id="turmas"> 
+          <option value="IA 26">
+          <option value="IA 25">
+          <option value="IA 24">
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Monte sua pizza</legend>
+        <label>Sabores: <span class="dica">Marque até 3</span></label>
+<div class="checkbox-group">
+    <label class="checkbox-sabor">
+        <input type="checkbox" name="sabor" value="calabresa">
+        Calabresa 
+        
+    </label>
+    
+    <label class="checkbox-sabor">
+        <input type="checkbox" name="sabor" value="mussarela">
+        Mussarela
+    </label>
+    
+    <label class="checkbox-sabor">
+        <input type="checkbox" name="sabor" value="portuguesa">
+        Portuguesa
+    </label>
+    
+    <label class="checkbox-sabor">
+        <input type="checkbox" name="sabor" value="frango-catupiry">
+        Frango com Catupiry
+    </label>
+    
+    <label class="checkbox-sabor">
+        <input type="checkbox" name="sabor" value="4-queijos">
+        4 Queijos
+    </label>
+    
+    <label class="checkbox-sabor">
+        <input type="checkbox" name="sabor" value="shandarina">
+        Shanidarina - carne + ervas 
+     </label>
+
+    <label  class="checkbox-sabor">
+         <input type="checkbox" name="sabor" value="chocolate">
+          Chocolate
+    </label>
+
+    <label class="checkbox-sabor">
+        <input type="checkbox" name="sabor" value="chocolate branco">
+        Chocolate branco 
+    </label>
+
+</div>
+
+        <label for="tamanho">Tamanho:</label>
+        <div class="radio-group">
+         <input type="radio" id="broto" name="tamanho" value="broto" required>
+         <label for="broto">Broto-R$30</label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+         <input type="radio" id="media" name="tamanho" value="media">
+         <label for="media">Média-R$50</label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+         <input type="radio" id="grande" name="tamanho" value="grande">
+         <label for="grande">Grande-R$80</label> 
+       </div> 
+
+       <label class="checkbox"> 
+        <input type="checkbox" name="borda" value="sim">
+        Quero borda recheada +R$10
+      </label> 
+   </fieldset>
+   
+   <fieldset>
+      <legend>3. Detalhes finais</legend>
+      <label for="obs">Observações:</label> 
+      <textarea id="obs" name="obs" rows="3" placeholder="Ex: Sem cebola, cortar em 4 fatias"></textarea>
+      
+      <label for="qtd">Quantidade de pizzas:</label>
+      <input type="number" id="qtd" name="qtd" min="1" max="10" value="1" required>
+    </fieldset>
+
+
+<fieldset>
+    <legend>4. Forma de pagamento</legend>
+    <div class="radio-group">
+        <input type="radio" id="pix" name="pagamento" value="pix" required>
+        <label for="pix">Pix</label>
+        
+        <input type="radio" id="dinheiro" name="pagamento" value="dinheiro">
+        <label for="dinheiro">Dinheiro</label>
+        
+        <input type="radio" id="cartao" name="pagamento" value="cartao">
+        <label for="cartao">Cartão</label>
+        
+        <input type="radio" id="fiado" name="pagamento" value="fiado">
+        <label for="fiado">Fiado pro professor</label>
+    </div>
+    
+    <label for="troco">Troco pra quanto?</label>
+    <input type="number" id="troco" name="troco" min="0" placeholder="Ex: 50">
+  </fieldset>
+
+  <button type="submit">enviar pedido</button>
+    </form>                                                                                                                                                             </html>
+   </div>
+ </body>
+ </html>
